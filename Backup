@@ -1,0 +1,40 @@
+/*
+SQLyog Ultimate - MySQL GUI v8.21 
+MySQL - 5.1.29-rc-community : Database - signup
+*********************************************************************
+*/
+
+/*!40101 SET NAMES utf8 */;
+
+/*!40101 SET SQL_MODE=''*/;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`signup` /*!40100 DEFAULT CHARACTER SET latin1 */;
+
+USE `signup`;
+
+/*Table structure for table `mytable` */
+
+DROP TABLE IF EXISTS `mytable`;
+
+CREATE TABLE `mytable` (
+  `First_Name` varchar(10) DEFAULT NULL,
+  `Last_Name` varchar(10) DEFAULT NULL,
+  `Pass` varchar(10) DEFAULT NULL,
+  `Email` varchar(17) NOT NULL,
+  `Gender` varchar(10) DEFAULT NULL,
+  `DOB` varchar(15) DEFAULT NULL,
+  PRIMARY KEY (`Email`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `mytable` */
+
+insert  into `mytable`(`First_Name`,`Last_Name`,`Pass`,`Email`,`Gender`,`DOB`) values ('Dani','Tariq','reera','dani@gmail.com','female','oct 1,2000'),('Areeba','fdfd','dfd','me@yahoo.com','gdgd','gdgd'),('GulMeena','Arif','fortran','meeba@gmail.com','male','9 oct,2000'),('Raabia','Basri','123asdf','rab@yahoo.com','female','9 nov 1999'),('Reeta','Arif','fsjas','reeta@gmail.com','dmksd','fdf');
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
